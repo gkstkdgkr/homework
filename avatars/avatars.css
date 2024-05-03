@@ -1,0 +1,51 @@
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+.live {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 4px;
+  right: 1px;
+}
+
+.live_off {
+  background-color: #DBDBDB;
+}
+
+.live_on {
+  background-color: #4CFE88;
+}
+
+.thumbnail {
+  position: relative;
+}
+/* ----------------------------- float ----------------------------- */
+
+.thumbnail{
+  float: left;
+  margin: 10px;
+}
+.line {
+  width: 336px;
+}
+
+/* ----------------------------- flex ----------------------------- */
+
+/* 
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.line {
+  display: flex;
+  width: 316px;
+  justify-content: space-between;
+  margin: 20px;
+} */

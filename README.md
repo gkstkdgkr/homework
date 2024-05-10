@@ -9,4 +9,4 @@
 - flex기준으로 세팅하고 상하 변경
 
 ## 과제 2
-[naver.md]()
+[naver.md](https://github.com/gkstkdgkr/homework/blob/main/naver/naver.md)

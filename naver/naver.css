@@ -1,0 +1,164 @@
+body {
+  font-size: 16px;
+  color: #181818;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #181818;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  margin: 80px auto;
+}
+
+form {
+  width: 500px;
+  margin: 0 20px;
+  position: relative;
+
+  input {
+    height: 45px;
+    border: 2px solid #dadada;
+    border-radius: 4px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+}
+
+.login-id,
+.login-pwd,
+.login-button {
+  font-size: 14px;
+  height: 45px;
+  border: 2px solid #dadada;
+  border-radius: 4px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: calc(100% - 40px);
+  background-color: #fff;
+}
+
+.login-button {
+  background-color: #03cf5d;
+  border: #03cf5d solid;
+}
+
+.option {
+  width: calc(100% - 80px);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+
+}
+
+
+.login-option {
+  position: relative;
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  input {
+    position: absolute;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  label {
+    background: url(../naver/icons/unchecked.svg) no-repeat 0 0 / contain;
+    cursor: pointer;
+    padding-left: 25px;
+  }
+
+  input:checked+label {
+    background: url(../naver/icons/checked.svg) no-repeat 0 0 / contain;
+  }
+}
+
+.security-option {
+
+
+  .security-onoff {
+    
+    input[type="checkbox"] {
+      appearance: none;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+
+    input {
+      position: absolute;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+    }
+
+    input:checked+label::after {
+      content: "ON";
+      color: #03cf5d;
+    }
+
+    label::after {
+      content: "OFF";
+      color: #181818;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  .login{
+    width: calc(100% - 40px);
+  }
+  .security-option {
+    display: none;
+  }
+
+  .option {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .login {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .option {
+    padding: 0;
+    width: inherit;
+  }
+
+  .security-option {
+    margin-right: 40px;
+  }
+
+}

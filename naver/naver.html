@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naver</title>
+    <link rel="stylesheet" href="naver.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <img src="naver-logo.svg" alt="네이버로고" class="logo" />
+      <form class="login">
+        <input
+          type="text"
+          class="login-id"
+          required
+          placeholder="아이디(이메일)"
+        />
+        <input type="text" class="login-pwd" required placeholder="비밀번호" />
+        <button type="submit" class="login-button">로그인</button>
+      </form>
+      <form class="option">
+        <div class="login-option">
+          <input type="checkbox" id="saveLogin" />
+          <label for="saveLogin">로그인 상태유지</label>
+        </div>
+        <div class="security-option">
+          <a href="./ip_security.html" target="_blank">IP 보안</a>
+          <span class="security-onoff">
+            <input
+              type="checkbox"
+              id="securitySwitch"
+              class="security-switch-checkbox"
+            />
+            <label for="securitySwitch" class="security-switch"></label>
+          </span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

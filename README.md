@@ -10,3 +10,6 @@
 
 ## 과제 2
 [naver.md](https://github.com/gkstkdgkr/homework/blob/main/naver/naver.md)
+
+## 과제 3
+[apple.md](https://github.com/gkstkdgkr/homework/blob/main/apple/apple.md)

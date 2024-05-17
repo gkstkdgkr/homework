@@ -1,0 +1,72 @@
+@import url(theme.css);
+
+/* 카드 그리드를 설정 */
+.card{
+  background-size: cover; /* 배경 이미지 크기 조절 */
+  background-position: center; /* 배경 이미지 위치 조절 */
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.product{
+  height: 548px;
+  display: flex; 
+  justify-content: start; 
+  align-items: center;
+  flex-direction: column; 
+}
+.title{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 50px 0 20px;
+}
+.card-text{
+  text-align: center;
+  font-weight: 500;
+  div{
+    font-size: 20px;
+  }
+  .released-later{
+    color: var(--gray);
+    margin-top: 10px;
+  }
+}
+.white-text{
+  color: var(--white);
+}
+.black-text{
+  color: var(--black);
+}
+button{
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 5px 0 5px;
+}
+
+.blue-fill {
+  border: 1px solid var(--blue-100);
+  background-color: var(--blue-100);
+  color: var(--white);
+}
+
+.blue-unfill {
+  border: 1px solid var(--blue-100);
+  background-color: transparent;
+  color: var(--blue-100);
+}
+
+.black-fill {
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.black-unfill {
+  border: 1px solid var(--black);
+  background-color: transparent;
+  color: var(--black);
+}

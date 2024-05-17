@@ -1,0 +1,59 @@
+@import url(card-component.css);
+@import url(base.css);
+@import url(reset.css);
+@import url(theme.css);
+
+/* 카드 레이아웃 */
+.Ipad-Pro {
+  background-image: url(../products/ipad_pro.jpeg);
+}
+
+.Ipad-Air {
+  background-image: url(../products/ipad_air.jpeg);
+}
+
+.Iphone-Pro {
+  background-image: url(../products/iphone15_pro.jpeg);
+}
+
+.Iphone {
+  background-image: url(../products/iphone15.jpeg);
+}
+
+.Watch {
+  background-image: url(../products/apple_watch.jpeg);
+}
+
+.MacBook-Air {
+  background-image: url(../products/macbook_air.jpeg);
+}
+
+.airPots-Pro {
+  background-image: url(../products/airpods_pro.jpeg);
+}
+
+@media (min-width: 1024px) {
+  .Ipad-Pro {
+    background-image: url(../products/ipad_pro_wide.jpeg);
+  }
+
+  .Ipad-Air {
+    background-image: url(../products/ipad_air_wide.jpeg);
+  }
+
+  .Iphone-Pro {
+    background-image: url(../products/iphone15_pro_wide.jpeg);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 1번째부터 3번째까지 1열에 배치 */
+  .Ipad-Pro,
+  .Ipad-Air,
+  .Iphone-Pro {
+    grid-column: span 2;
+    /* 2열 차지 */
+  }
+}
